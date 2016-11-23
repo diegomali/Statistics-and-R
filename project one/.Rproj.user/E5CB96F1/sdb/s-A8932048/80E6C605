@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "library(downloader)\nurl <- \"https://raw.githubusercontent.com/genomicsclass/dagdata/master/inst/extdata/femaleControlsPopulation.csv\"\nfilename <- basename(url)\ndownload(url, destfile=filename)\nx <- unlist( read.csv(filename) )\nmean(x)\n\nset.seed(1)\nabs( mean( sample(x, 5) ) - mean(x) )\n\n\nset.seed(5)\nabs( mean( sample(x, 5) ) - mean(x) )\n\n",
+    "created" : 1479915311039.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1381324606",
+    "id" : "80E6C605",
+    "lastKnownWriteTime" : 1479916720,
+    "last_content_update" : 1479916720679,
+    "path" : "~/GitHub/R/project one/week 2 random variables and propability distributions.R",
+    "project_path" : "week 2 random variables and propability distributions.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
