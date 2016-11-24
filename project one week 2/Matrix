@@ -1,0 +1,18 @@
+Write a program that takes input of an integer N, followed by N lines of N integers. Each integer is either 1 or zero. The program then outputs an N x N matrix where each block indicates the number of 1's around that block, (excluding the block itself) . For Block 0 on row 0, surrounding blocks are (0,1) (1,0) and (1,1). Similary for block (1,1) all the blocks are to be counted as surrounding blocks.
+
+Your output lines should not have any trailing or leading whitespaces
+In case of error your output should be only "0"
+Constraints:
+
+Maximum Dimension of Grid = 1000 x 1000
+Input:
+3
+0 1 0
+0 0 0
+1 0 0
+
+Output
+1 0 1
+2 2 1
+0 1 0
+

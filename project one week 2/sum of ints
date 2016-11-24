@@ -1,0 +1,45 @@
+<SCROLL OR MAXIMIZE THIS AREA TO SEE FULL PROBLEM DESCRIPTION>
+
+Write a code that given a positive integer, find the sum of its digits.
+
+The input may contain multiple lines
+Every input line shall have an output line.
+Your output lines should not have any trailing or leading whitespaces
+In case of error your output should be 0
+For example:
+
+Input:
+12
+56
+27
+
+Output:
+3
+11
+9
+
+Resposta:
+//Installed node modules: jquery underscore request express jade shelljs passport http sys lodash async mocha moment connect validator restify ejs ws co when helmet wrench brain mustache should backbone forever debug
+//Obs: preferi usar stdin 
+// Como 88 não contem '\n' evento line não é emitido
+var stdin = process.stdin,
+    stdout = process.stdout
+
+stdin.resume();
+stdin.setEncoding('utf8');
+
+stdin.on('data', function (data) {
+    processLine(data);
+});
+
+
+function processLine(data){
+    data
+        .split(/\n/gi)
+        .forEach(function(line){
+            console.log(line.toString()
+                .split('')
+                .map(function(x){ return parseInt(x)})
+                .reduce(function(x,y){ return x+y}));
+        });
+}

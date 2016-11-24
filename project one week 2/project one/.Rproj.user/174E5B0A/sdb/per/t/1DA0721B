@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "library(downloader) \nurl <- \"https://raw.githubusercontent.com/genomicsclass/dagdata/master/inst/extdata/femaleMiceWeights.csv\"\nfilename <- \"femaleMiceWeights.csv\"\ndownload(url, destfile=filename)\n\ndat <-read.csv(\"femaleMiceWeights.csv\")\ndat[12, 2]\ndat$Bodyweight[11]\nlength(dat$Bodyweight)\ndata\nmean(dat[13:24,]$Bodyweight)\nset.seed(1)\nsample(dat[13:24,]$Bodyweight, 1)\n",
+    "created" : 1479862930623.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3961436893",
+    "id" : "1DA0721B",
+    "lastKnownWriteTime" : 1479864113,
+    "last_content_update" : 1479864113846,
+    "path" : "~/Desenvolvimento/project one R/project one/main.R",
+    "project_path" : "main.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

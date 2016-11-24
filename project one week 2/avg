@@ -1,0 +1,37 @@
+Write a program that takes input of an integer N, followed by N integers. The program then outputs the number closest to the average of those N integers. If there are more than one solution, output the one that comes first in the input list.​
+
+Your output lines should not have any trailing or leading whitespaces
+In case of error your output should be 0
+Input
+5
+1 2 3 4 6
+
+Output
+3
+Explanation: The average is 3.2 for {1,2,3,4,6}. Hence 3 is the closest
+
+Resposta:
+//Installed node modules: jquery underscore request express jade shelljs passport http sys lodash async mocha moment connect validator restify ejs ws co when helmet wrench brain mustache should backbone forever debug
+
+var readline = require('readline');
+var rl = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout
+});
+
+rl.on('line', function(line){
+    processLine(line);
+})
+
+var n = null;
+function processLine(line){
+  if(n == null){
+    n = parseInt(line); 
+  }else{
+      var sum = line
+          .split(' ')
+          .map(function(x){ return parseInt(x);})
+      .reduce(function(x,y){ return x+y;});
+   console.log(Math.round(sum/n));   
+  }
+}

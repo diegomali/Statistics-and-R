@@ -1,0 +1,55 @@
+Write a program that takes input of  integers N and M, followed by N more integers and then M more integers. For each of the last M numbers, the program outputs true, if that number was present in the array of N numbers, output False otherwise.​
+
+Your output lines should not have any trailing or leading whitespaces
+In case of error your output should be 0
+Constraints:
+0 < N < 20,000
+
+0<M<15,000
+
+Input
+4 2
+99 12 10 23
+23
+25
+
+Output
+True
+False
+
+Explanation: An input of size 4 is taken, followed by 2 lines. 23 outputs True, since 23 is present in above array, 25 outputs false because it was not in the array of N integers.
+
+Resposta :
+//Installed node modules: jquery underscore request express jade shelljs passport http sys lodash async mocha moment connect validator restify ejs ws co when helmet wrench brain mustache should backbone forever debug
+
+var readline = require('readline');
+var rl = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout
+});
+
+rl.on('line', function(line){
+    processLine(line);
+})
+
+var m = 0,
+    arr,
+    lastNumber = null;
+
+function processLine(line){
+    try{
+        if(m <= 0){
+           m = parseInt(line),
+           arr = null;
+        }else if(arr == null){
+            arr = line.split(' ').map(function(x){
+                return parseInt(x);
+            });
+        }else{
+            console.log(arr.indexOf(parseInt(line)) != -1 ? 'True' : 'False');
+            m--;
+        }
+    }catch(e){
+        console.log(0);
+    }
+}

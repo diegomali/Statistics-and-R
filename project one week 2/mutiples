@@ -1,0 +1,13 @@
+Given 3 numbers(positive integers) A, B and X, write a program that prints the numbers from 1 to X. But for multiples of A print "A" instead of the number and for the multiples of B print "B". For numbers which are multiples of both A and B print "AB".
+
+The input contains multiple lines, and each line contains 3 numbers that are space delimited
+Every input line shall have an output line.
+Your output lines should not have any trailing or leading whitespaces
+In case of error your output should be 0
+For example:
+
+Input:
+2 7 14
+
+Output:
+1 A 3 A 5 A B A 9 A 11 A 13 AB 
