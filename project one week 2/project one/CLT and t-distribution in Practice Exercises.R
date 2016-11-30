@@ -40,4 +40,25 @@ mean(X)
 #CLT and t-distribution in Practice Exercises #4
 #aproximate by SE
 #read more about 
-4
+# A: 4
+#CLT and t-distribution in Practice Exercises #5
+#A: 0
+#CLT and t-distribution in Practice Exercises #6
+sd(X)
+##CLT and t-distribution in Practice Exercises #7
+2 * (1 - pnorm(2/(sd(X)/sqrt(12)) ))
+##CLT and t-distribution in Practice Exercises #8
+sqrt( sd(X)^2/12 + sd(Y)^2/12 )
+##or sqrt( var(X)/12 + var(Y)/12)
+##CLT and t-distribution in Practice Exercises #9
+( mean(Y) - mean(X) ) / sqrt( var(X)/12 + var(Y)/12)
+##or t.test(Y,X)$stat
+##CLT and t-distribution in Practice Exercises #10
+#A: 1
+##CLT and t-distribution in Practice Exercises #11
+Z <- ( mean(Y) - mean(X) ) / sqrt( var(X)/12 + var(Y)/12)
+2*( 1-pnorm(Z)) 
+##CLT and t-distribution in Practice Exercises #12
+t.test(X,Y)$p.value
+##CLT and t-distribution in Practice Exercises #13
+#A:  zero mean
